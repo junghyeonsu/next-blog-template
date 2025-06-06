@@ -1,0 +1,9 @@
+{
+  "name": "@junghyeonsu/next-blog-template",
+  "private": true,
+  "version": "1.0.0",
+  "repository": "https://github.com/junghyeonsu/next-blog-template.git",
+  "author": "정현수 <54893898+junghyeonsu@users.noreply.github.com>",
+  "license": "MIT",
+  "packageManager": "yarn@4.9.2"
+}
