@@ -1,6 +1,6 @@
 import { defineCollection, defineConfig } from "@content-collections/core";
 import { z } from "zod/v4";
- 
+
 /**
  * @see https://www.content-collections.dev/docs/configuration
  */
@@ -34,7 +34,7 @@ const contents = defineCollection({
     updatedAt: z.iso.date().optional(),
   }),
 });
- 
+
 export default defineConfig({
   collections: [contents],
 });

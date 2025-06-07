@@ -1,0 +1,25 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "organizeImports": {
+    "enabled": false
+  },
+  "formatter": {
+    "ignore": ["**/.next/**/*"],
+    "enabled": true,
+    "indentStyle": "space",
+    "lineEnding": "lf",
+    "lineWidth": 100
+  },
+  "linter": {
+    "enabled": true,
+    "ignore": ["**/.next/**/*", "**/.content-collections/**/*"],
+    "rules": {
+      "recommended": true
+    }
+  }
+}
