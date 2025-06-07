@@ -18,12 +18,11 @@ const posts = defineCollection({
      * @see https://zod.dev/api?id=iso-dates
      * @example 2025-12-31
      */
-    createdAt: z.iso.date().optional().describe("글 생성일"),
+    createdAt: z.iso.date().describe("글 생성일"),
     updatedAt: z.iso.date().optional().describe("글 수정일"),
   }),
   transform: ({ _meta, ...frontmatters }) => {
-    const slug =
-      frontmatters.slug || _meta.directory.split("/").pop()?.split("-").slice(3).join("-");
+    const slug = frontmatters.slug || _meta.directory.split("/").pop();
 
     const content = createDefaultImport<MDXContent>(`@/content/${_meta.filePath}`);
 
