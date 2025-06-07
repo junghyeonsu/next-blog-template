@@ -30,7 +30,7 @@ const Header = () => {
         "sticky top-0 z-10 flex items-center w-full h-[70px] px-5 gap-4",
         "transition-shadow duration-300 ease-in-out",
         "bg-background",
-        isSticky ? "shadow-sm" : "shadow-none",
+        isSticky ? "shadow-xs" : "shadow-none",
       )}
     >
       <Logo />
@@ -70,6 +70,7 @@ const RSS = () => (
 
 const ThemeToggler = () => (
   <button
+    type="button"
     className="hover:opacity-80 transition-opacity"
     onClick={() => {
       document.documentElement.classList.toggle("dark");
