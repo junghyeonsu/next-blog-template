@@ -14,10 +14,5 @@
   "[css]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
-  "editor.formatOnSave": true,
-  "auto-close-tag.activationOnLanguage": [
-    "mdx"
-  ],
-  "files.eol": "\n",
-  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.formatOnSave": true
 }
