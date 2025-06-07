@@ -1,5 +1,6 @@
 {
-  "name": "@junghyeonsu/next-blog-template",
+  "name": "junghyeonsu-blog",
+  "description": "junghyeonsu's blog",
   "private": true,
   "version": "1.0.0",
   "repository": "https://github.com/junghyeonsu/next-blog-template.git",
@@ -18,11 +19,14 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@content-collections/core": "^0.9.0",
+    "@content-collections/next": "^0.2.6",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "zod": "^3.25.56"
   }
 }
