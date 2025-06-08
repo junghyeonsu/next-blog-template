@@ -1,10 +1,11 @@
+import type { BundledTheme } from "shiki/bundle/web";
+
 /**
  * Blog Configuration
  *
  * 이 파일을 수정하여 블로그를 커스터마이징하세요.
  * Customize your blog by modifying this file.
  */
-
 export const blogConfig = {
   // 기본 정보 / Basic Information
   site: {
@@ -30,13 +31,22 @@ export const blogConfig = {
     github: "https://github.com/junghyeonsu",
     twitter: "",
     linkedin: "",
-    email: "mailto:54893898+junghyeonsu@users.noreply.github.com",
+    email: "jung660317@naver.com",
   },
 
   // 블로그 기능 / Blog Features
   features: {
     darkMode: true,
     analytics: false,
+  },
+
+  /**
+   * 코드 하이라이팅 설정 / Code Highlighting Settings
+   * 주의할 점: 동적으로 변경은 안되고, 빌드 시 정해진 테마만 사용 가능합니다.
+   */
+  codeHighlight: {
+    lightTheme: "min-light" as BundledTheme,
+    darkTheme: "min-dark" as BundledTheme,
   },
 
   // 댓글 시스템 (Giscus) / Comment System

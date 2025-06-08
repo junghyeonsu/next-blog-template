@@ -5,3 +5,4 @@
 - Shadcn UI
 - Content Collection (Data Layer)
 - Biome (Linter)
+- Code Syntax Highligher (Shiki)

@@ -118,3 +118,29 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Shiki code blocks styling */
+@layer components {
+  .shiki {
+    @apply my-6 overflow-x-auto rounded-lg border;
+    padding: 1rem;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
+  }
+  
+  .shiki code {
+    @apply block text-sm leading-relaxed;
+  }
+  
+  /* Ensure Shiki color variables work properly */
+  .shiki,
+  .shiki span {
+    color: var(--shiki-light, inherit) !important;
+    background-color: var(--shiki-light-bg, transparent);
+  }
+  
+  .dark .shiki,
+  .dark .shiki span {
+    color: var(--shiki-dark, inherit) !important;
+    background-color: var(--shiki-dark-bg, transparent);
+  }
+}
