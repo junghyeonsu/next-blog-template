@@ -23,7 +23,7 @@ required:
 
 - check out the [blog.config.ts](./blog.config.ts) file to customize your blog.
 - check out the [content-collections.ts](./content-collections.ts) file to customize your content collection.
-- add your content to the [content](./src/content) folder.
+- add your content to the [content](./content) folder.
 
 optional:
 

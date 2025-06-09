@@ -7,7 +7,7 @@ import { z } from "zod/v4";
  */
 const posts = defineCollection({
   name: "posts",
-  directory: "./src/content",
+  directory: "./content",
   include: "**/*.mdx",
   parser: "frontmatter-only",
   schema: z.object({
@@ -24,7 +24,7 @@ const posts = defineCollection({
   transform: ({ _meta, ...frontmatters }) => {
     const slug = frontmatters.slug || _meta.directory.split("/").pop();
 
-    const content = createDefaultImport<MDXContent>(`@/content/${_meta.filePath}`);
+    const content = createDefaultImport<MDXContent>(`../../content/${_meta.filePath}`);
 
     return {
       ...frontmatters,
